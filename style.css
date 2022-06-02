@@ -1,0 +1,222 @@
+ * {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   text-decoration: none;
+ }
+
+ .max-width {
+   max-width: 1400px;
+   padding: 0 30px;
+   margin: auto;
+ }
+
+ /*  navbar styling */
+ .navbar {
+   width: 100%;
+   padding: 8px 0;
+   background-color: crimson;
+ }
+
+ .navbar .max-width {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .navbar .logo a {
+   font-size: 35px;
+   font-weight: 600;
+   color: white;
+ }
+
+ .navbar .menu li {
+   display: inline-block;
+ }
+
+ .navbar .menu li a {
+   color: black;
+   font-size: 18px;
+   font-weight: 500;
+   margin-left: 10px;
+   transition: color 0.3s ease;
+ }
+
+ .navbar .menu li a:hover {
+   color: white;
+ }
+
+ /* navbar styling ended */
+
+ /* Home section background styling */
+ .home {
+   display: flex;
+   background: url("/Image/backimage.jpg") fixed;
+   background-size: cover;
+   height: 100vh;
+   color: wheat;
+   min-height: 500px;
+ }
+
+ /* Backgroung styling end */
+
+ .home .max-width {
+   margin: auto 0px auto 40px;
+ }
+
+ .home .max-width .home-content .text-1 {
+   font-size: 20px;
+ }
+
+ .home .max-width .home-content .text-2 {
+   font-size: 40px;
+   font-weight: 600;
+   margin-left: -3px;
+   color: crimson;
+ }
+
+ .home .max-width .home-content .text-3 {
+   font-size: 20px;
+ }
+
+ .home .max-width .home-content .text-3 span,
+ span {
+   color: crimson;
+ }
+
+ footer {
+   background-color: black;
+   color: white;
+ }
+/*  About section  */
+.home .content .about-us{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: sans-serif;
+  color: white;
+  font-size: 30px;
+  margin: 20px 330px;
+}
+.home .content .article{
+  color: black;
+  font-size: 20px;
+  padding: 300;
+  margin: 40px 20px;
+}
+/* Contact styling start */
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  background: url('Image/backimage.jpg') fixed;
+  background-size: cover;
+}
+.contact .ccontent{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .ccontent h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: black;
+}
+.container-2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container-2 .contactinfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container-2 .contactinfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container-2 .contactinfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 15px;
+  color: black;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container-2 .contactinfo .box .text h3{
+  font-weight: 500;
+  color: orange;
+}
+.contactform{
+  width: 40%;
+  padding: 40px;
+  background: white;
+}
+.contactform h2{
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+}
+.contactform .inputbox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 15px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  resize: none;
+}
+.contactform .inputbox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: black;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+  color: orange;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+  width: 100px;
+  background: orange;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@media(max-width:991px)
+{
+  .contact{
+    padding: 50px;
+  }
+  .container-2{
+    flex-direction: column;
+  }
+  .container-2 .contactinfo{
+    margin-bottom: 40px;
+  }
+  .container-2 .contactinfo,{
+    width: 100%;
+  }
+}
