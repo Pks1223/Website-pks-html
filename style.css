@@ -51,7 +51,7 @@
  /* Home section background styling */
  .home {
    display: flex;
-   background: url("https://www.istockphoto.com/photo/mountain-landscape-gm517188688-89380423") fixed;
+   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQmlVfCRPY2J9O5nt0H2QOTpFp09rAgq27zRIRtsR1r58ncexbk2lbeG7g&s=10") fixed;
    background-size: cover;
    height: 100vh;
    color: wheat;
